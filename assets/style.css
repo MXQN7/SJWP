@@ -1,0 +1,48 @@
+/* element selector */
+h1{
+
+    color: darkviolet;
+
+}
+
+/* class selector */
+
+.prvi{
+
+    color: aquamarine;
+}
+
+.drugi{
+
+    color: chartreuse;
+}
+
+.treci{
+
+    color: darkgoldenrod;
+}
+
+/* id selektor */
+#cetvrti{
+
+    color: chocolate;
+}
+
+p[draggable="true"]{
+
+    color: fuchsia;
+}
+
+
+p[draggable="false"]{
+
+    color: black;
+}
+
+
+/* univerzalni selektor */
+
+*{
+
+    background-color: beige;
+}
