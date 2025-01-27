@@ -22,14 +22,22 @@
 
         .prvi{
 
-            margin-left: 700px;
+            margin-left: 693px;
             height: 225px;
             width: 500px;
+            top: 140px;
             position: absolute;
             background-color: #49225b;
             border-radius: 120px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: transform 500ms;
         
+        }
+
+        .prvi:hover{
+
+            transform: translateY(-40px);
+
         }
 
         .drugi{
@@ -39,9 +47,18 @@
             height: 225px;
             width: 500px;
             position: absolute;
+            left: 700px;
+            top: 90px;
             background-color: #6e3482;
             border-radius: 120px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: transform 500ms;
+        }
+
+        .drugi:hover{
+
+        transform: translateY(-40px);
+
         }
 
         .treci{
@@ -50,10 +67,19 @@
             margin-top: 150px;
             height: 225px;
             width: 500px;
+            left: 700px;
+            top: 190px;
             position: absolute;
             background-color: #a56abd;
             border-radius: 120px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: transform 500ms;
+        }
+
+        .treci:hover{
+
+        transform: translateY(-40px);
+
         }
 
         .cetvrti{
@@ -62,11 +88,20 @@
             margin-top: 150px;
             height: 225px;
             width: 500px;
+            left: 700px;
+            top: 280px;
             position: absolute;
             background-color: #e7dbef;
             border-radius: 120px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: transform 500ms;
         }
+
+        .cetvrti:hover{
+
+transform: translateY(-40px);
+
+}
 
         .peti{
 
@@ -74,11 +109,20 @@
             margin-top: 150px;
             height: 225px;
             width: 500px;
+            left: 700px;
+            top: 370px;
             position: absolute;
             background-color: #f5ebfa;
             border-radius: 120px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: transform 500ms;
         }
+
+        .peti:hover{
+
+transform: translateY(-40px);
+
+}
 
         .pt{
             color: #f5ebfa;
@@ -127,19 +171,12 @@
 </head>
 <body>
 
-    <div class="prvi">
-        <div class="drugi">
-            <div class="treci">
-                <div class="cetvrti">      
-                    <div class="peti"><p class="pet">#F5EBFA</p></div>
-                    <p class="ct">#E7DBEF</p>
-                </div>
-                <p class="tt">#A56ABD</p>
-            </div>
-            <p class="dt">#6E3482</p>
-        </div>
-        <p class="pt">#49225B</p>
-    </div>
+    <div class="prvi"><p class="pt">#49225B</p></div>
+    <div class="drugi"><p class="dt">#6E3482</p></div>
+    <div class="treci"><p class="tt">#A56ABD</p></div>
+    <div class="cetvrti"><p class="ct">#E7DBEF</p></div>    
+    <div class="peti"><p class="pet">#F5EBFA</p></div>
+      
 
 </body>
 </html>
