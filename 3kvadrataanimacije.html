@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .circle{
+
+            border: 5px solid gold;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border-top: 3px solid white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation-name: spin;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        @keyframes spin{
+
+            0%{
+                
+            }
+
+            100%{
+
+                transform: rotate(360deg);
+
+            }
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="circle"></div>
+    
+</body>
+</html>
