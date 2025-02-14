@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Chart</title>
+    <style>
+        .krug {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .krug-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(
+                #00a896 0deg 120deg,
+                #028090 120deg 240deg,
+                #05668d 240deg 360deg
+            );
+            position: relative;
+            
+        }
+        .krug-chart::before {
+            content: "";
+            width: 60%;
+            height: 60%;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .krug1{
+
+        position: absolute;
+        background-color: #00a896;
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        left: 80px;
+        
+        }
+
+        .krug2{
+
+        position: absolute;
+        background-color: #028090;
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        left: 146px;
+        top: 125px;
+   
+        }
+
+        .krug3{
+
+        position: absolute;
+        background-color: #05668d;
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        left: 14px;
+        top: 125px;
+
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="krug">
+        <div class="krug-chart">
+            <div class="krug1"></div>
+            <div class="krug2"></div>
+            <div class="krug3"></div>
+
+        </div>
+    </div>
+
+ 
+</body>
+</html>
