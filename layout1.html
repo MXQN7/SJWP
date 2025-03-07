@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vjezba</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        width: 80%;
+        height: 80%;
+        border: 4px solid black;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .header, .footer {
+        background-color: rgb(96, 191, 223);
+        text-align: center;
+        padding: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        border: 4px solid black;
+    }
+
+    .main {
+        display: flex;
+        flex: 1;
+        border: 4px solid black;
+    }
+
+    .menu, .ads {
+        background-color: rgb(236, 136, 236);
+        width: 20%;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 4px solid black;
+    }
+
+    .content {
+        background-color: rgb(255, 180, 191);
+        width: 60%;
+        padding: 20px;
+        text-align: center;
+        border: 4px solid black;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">HEADER</div>
+    <div class="main">
+        <div class="menu">
+            <div>MENU</div>
+            <div>ITEM 1</div>
+            <div>ITEM 2</div>
+            <div>ITEM 3</div>
+            <div>ITEM 4</div>
+            <div>ITEM 5</div>
+        </div>
+        <div class="content">
+            <h2>CONTENT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </div>
+        <div class="ads">
+            <div>AD</div>
+            <div>AD</div>
+        </div>
+    </div>
+    <div class="footer">FOOTER</div>
+</div>
+</body>
+</html>
