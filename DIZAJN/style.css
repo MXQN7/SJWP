@@ -1,0 +1,148 @@
+body{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+tr{
+
+    border: black solid 2px;
+
+    text-align: center;
+}
+
+th{
+
+    border: black solid 2px;
+}
+
+td{
+
+    border: black solid 2px;
+}
+
+.sati{
+
+    background-color: wheat;
+}
+
+.pon{
+
+    background-color: skyblue;
+}
+
+.uto{
+
+    background-color: skyblue;
+}
+.sri{
+
+    background-color: skyblue;
+}
+.cet{
+
+    background-color: skyblue;
+}
+.pet{
+
+    background-color: skyblue;
+}
+
+.dbp{
+
+    background-color: cadetblue;
+}
+
+.en{
+
+    background-color: darkkhaki;
+}
+
+.prim_mat{
+
+    background-color: crimson;
+}
+
+.sjwp{
+
+    background-color: chocolate;
+}
+
+.os{
+
+    background-color: salmon;
+}
+
+.rm{
+
+    background-color: forestgreen ;
+}
+
+.sro{
+
+    background-color: darkorchid;
+}
+
+.mat{
+
+    background-color: sandybrown;
+}
+
+.hj{
+
+    background-color: silver;
+}
+
+.tzk{
+
+    background-color: cyan;
+}
+
+.gr{
+
+    background-color: fuchsia;
+}
+
+.niop{
+
+    background-color: darkorange;
+}
+
+.vj{
+
+    background-color: cornflowerblue;
+}
+
+.mu{
+
+    background-color: hotpink;
+}
+
+.izb_web{
+
+    background-color: gold;
+}
+
+.izb_pmu{
+
+    background-color: khaki;
+}
+
+.fiz{
+
+    background-color: rgb(226, 178, 226);
+}
+
+.fiz :hover{
+
+    background-color: red;
+}
+
+th:hover{
+
+    background-color: red;
+}
+
+td:hover{
+
+    background-color: red;
+}
