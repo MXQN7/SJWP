@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+
+
+            height: 350px;
+            width: 45vw;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            
+        }
+
+        .x{
+            font-weight: bold;
+            font-size: 40px;
+            background-color: rgb(34, 33, 32);
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+
+
+        }
+
+        .a{
+
+            order: 1;
+            grid-column: span 2;
+        }
+        
+        .b{
+
+            order: 2;
+            grid-column: span 2;
+        }
+
+        .c{
+            order: 3;
+        }
+
+        .d{
+            order: 4;
+            grid-column: span 3;
+        }
+
+        .e{
+            order: 5;
+            grid-column: span 4;
+        }
+
+        
+        
+    </style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="x a">A</div>
+        <div class="x b">B</div>
+        <div class="x c">C</div>
+        <div class="x d">D</div>
+        <div class="x e">E</div>
+    </div>
+    
+</body>
+</html>  
