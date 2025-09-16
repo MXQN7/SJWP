@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rotating Box</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      position: relative;
+      transition: all 0.5s;
+      animation: moveBox 5s infinite;
+    }
+
+    .box:hover {
+      background-color: blue;
+      transform: scale(1.5) rotate(360deg);
+    }
+
+    @keyframes moveBox {
+      0% {
+        left: 0;
+        background-color: red;
+        transform: rotate(0deg);
+      }
+      50% {
+        left: 300px;
+        background-color: yellow;
+        transform: rotate(180deg);
+      }
+      100% {
+        left: 0;
+        background-color: green;
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
