@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Elektrotehnički alati</title>
+    <link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+
+<h1>Elektrotehnički alati</h1>
+
+<div class="box">
+    <div class="left">
+        <h3>Ohmov zakon</h3>
+        U (V): <input type="number" id="u"><br>
+        R (Ω): <input type="number" id="r"><br>
+        <button onclick="ohm()">Izračunaj</button>
+        <p id="rez1"></p>
+    </div>
+    <div class="right">
+        <img src="slike/ohm.png" alt="Ohmov zakon">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Djelilo napona</h3>
+        R1 (Ω): <input type="number" id="r1"><br>
+        R2 (Ω): <input type="number" id="r2"><br>
+        Vin (V): <input type="number" id="vin"><br>
+        <button onclick="djelilo()">Izračunaj</button>
+        <p id="rez2"></p>
+    </div>
+    <div class="right">
+        <img src="slike/djelilo.png" alt="Djelilo napona">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Serijski otpornici</h3>
+        R1 (Ω) <input type="number" id="sr1"><br>
+        R2 (Ω) <input type="number" id="sr2"><br>
+        R3 (Ω) <input type="number" id="sr3"><br>
+        R4 (Ω) <input type="number" id="sr4"><br>
+        <button onclick="serijaR()">Izračunaj</button>
+        <p id="rez3"></p>
+    </div>
+    <div class="right">
+        <img src="slike/serijski_r.png" alt="Serijski otpornici">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Paralelni otpornici</h3>
+        R1 (Ω) <input type="number" id="pr1"><br>
+        R2 (Ω) <input type="number" id="pr2"><br>
+        R3 (Ω) <input type="number" id="pr3"><br>
+        R4 (Ω) <input type="number" id="pr4"><br>
+        <button onclick="paralelR()">Izračunaj</button>
+        <p id="rez4"></p>
+    </div>
+    <div class="right">
+        <img src="slike/paralelni_r.png" alt="Paralelni otpornici">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Serijski kondenzatori</h3>
+        C1 (F) <input type="number" id="sc1"><br>
+        C2 (F) <input type="number" id="sc2"><br>
+        C3 (F) <input type="number" id="sc3"><br>
+        C4 (F) <input type="number" id="sc4"><br>
+        <button onclick="serijaC()">Izračunaj</button>
+        <p id="rez5"></p>
+    </div>
+    <div class="right">
+        <img src="slike/serijski_c.png" alt="Serijski kondenzatori">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Paralelni kondenzatori</h3>
+        C1 (F) <input type="number" id="pc1"><br>
+        C2 (F) <input type="number" id="pc2"><br>
+        C3 (F) <input type="number" id="pc3"><br>
+        C4 (F) <input type="number" id="pc4"><br>
+        <button onclick="paralelC()">Izračunaj</button>
+        <p id="rez6"></p>
+    </div>
+    <div class="right">
+        <img src="slike/paralelni_c.png" alt="Paralelni kondenzatori">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Serijske zavojnice</h3>
+        L1 (H) <input type="number" id="sl1"><br>
+        L2 (H) <input type="number" id="sl2"><br>
+        L3 (H) <input type="number" id="sl3"><br>
+        L4 (H) <input type="number" id="sl4"><br>
+        <button onclick="serijaL()">Izračunaj</button>
+        <p id="rez7"></p>
+    </div>
+    <div class="right">
+        <img src="slike/serijski_l.png" alt="Serijske zavojnice">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Paralelne zavojnice</h3>
+        L1 (H) <input type="number" id="pl1"><br>
+        L2 (H) <input type="number" id="pl2"><br>
+        L3 (H) <input type="number" id="pl3"><br>
+        L4 (H) <input type="number" id="pl4"><br>
+        <button onclick="paralelL()">Izračunaj</button>
+        <p id="rez8"></p>
+    </div>
+    <div class="right">
+        <img src="slike/paralelni_l.png" alt="Paralelne zavojnice">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Induktivitet zračne zavojnice</h3>
+        μ (H/m) <input type="number" id="mu"><br>
+        N <input type="number" id="n"><br>
+        S (m²) <input type="number" id="s"><br>
+        l (m) <input type="number" id="l"><br>
+        <button onclick="induktivitet()">Izračunaj</button>
+        <p id="rez9"></p>
+    </div>
+    <div class="right">
+        <img src="slike/zavojnica.png" alt="Induktivitet zavojnice">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Induktivni otpor</h3>
+        ω (rad/s) <input type="number" id="w"><br>
+        L (H) <input type="number" id="lx"><br>
+        <button onclick="xl()">Izračunaj</button>
+        <p id="rez10"></p>
+    </div>
+    <div class="right">
+        <img src="slike/xl.png" alt="Induktivni otpor">
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="left">
+        <h3>Kapacitivni otpor</h3>
+        ω (rad/s) <input type="number" id="w2"><br>
+        C (F) <input type="number" id="cx"><br>
+        <button onclick="xc()">Izračunaj</button>
+        <p id="rez11"></p>
+    </div>
+    <div class="right">
+        <img src="slike/xc.png" alt="Kapacitivni otpor">
+    </div>
+</div>
+
+<script src="kalkulator.js"></script>
+</body>
+</html>
