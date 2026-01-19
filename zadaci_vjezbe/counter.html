@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        /* Centriranje svega na sredinu ekrana */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #counter {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 32px;
+            width: 60px;
+            height: 60px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div id="counter">0</div>
+    <div>
+        <button data-action="decrease">-</button>
+        <button data-action="increase">+</button>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
